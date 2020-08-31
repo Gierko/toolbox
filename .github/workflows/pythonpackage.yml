@@ -34,6 +34,6 @@ jobs:
     - uses: actions/checkout@v2
     - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
       with:
-        heroku_api_key: ${{secrets.KEY_API_HEROKU}}
+        heroku_api_key: ${{secrets.KEY_API_HEROKU2}}
         heroku_app_name: "tooltoolbox" # Must be unique in Heroku
         heroku_email: "n.gierko@hotmail.fr"
