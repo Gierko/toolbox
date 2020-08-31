@@ -5,7 +5,7 @@ import os
 import toolbox
 import pandas as pd
 # Import from our lib
-from toolbox.lib import clean_data
+from toolbox.lib import clean_data, my_name
 import pytest
 
 
@@ -17,3 +17,6 @@ def test_clean_data():
     assert df.shape == (999, 142)
     out = clean_data(df)
     assert out.shape == (985, 119)
+
+def test_my_name():
+    assert my_name("Gierko") == "My name is Gierko"
